@@ -1,0 +1,307 @@
+body, html{
+height: 100%;
+width: 100%;
+margin: 0px;
+position: 0px;
+}
+
+#login-formWrapper {
+width: 300px;
+height: 150px;
+paddding: 0px;
+margin-left: calc(50% - 150px);
+margin-top: 400px;
+overflow: auto;
+position: absolute;
+}
+
+.login-input {
+float: left;
+margin: 0px;
+padding: 0px;
+width: 100%;
+height: 40px;
+font-size: 20px;
+text-align: center;
+color: #666666;
+border: 1px solid gray;
+}
+.login-input.a-input{
+	border-bottom: 0px;
+	border-radius: 3px 3px 0 0;
+}
+.login-input.b-input{
+	border-radius: 0 0 3px 3px;
+}
+.login-button {
+float:left;
+margin:0px;
+margin-top: 10px;
+padding: 0px;
+width: 100%;
+height: 40px;
+font-size: 20px;
+color: white;
+background-color: #353535;
+border: 1px solid gray;
+border-radius: 3px;
+}
+
+#header {
+background-color: #252525;
+box-shadow: 0px 3px 5px 0px gray;
+width: 100%;
+margin: 0px;
+padding: 0px;
+height: 40px;
+overflow: auto;
+border-bottom: 1px solid gray;
+}
+#header-account {
+float: right;
+height: 100%;
+width: 200px;
+}
+#account-picture {
+float: left;
+height: 32px;
+width: 32px;
+border: 1px solid gray;
+border-radius: 5px;
+margin-left: 3px;
+margin-top: 3px;
+background-image: url('../head.png');
+background-size: 40px 40px;
+background-position: -4px, -4px; 
+}
+#account-name {
+float:left;
+height: 20px;
+font-size: 16px;
+font-weight: bold;
+line-height: 20px;
+text-indent: 5px;
+margin-top: 10px;
+width: 100px;
+color: white;
+}
+
+#header-search{
+height: 100%;
+width: calc(90% - 200px) ;
+float: left;
+text-align: center;
+}
+
+#header-logo{
+height: 100%;
+width: 10%;
+float:left;
+color: white;
+font-size: 16px;
+line-height: 40px;
+text-indent: 10px;
+}
+
+#header-input {
+width: 100%;
+max-width: 500px;
+height: 26px;
+margin-top: 7px;
+border: 1px solid gray;
+border-radius: 5px;
+text-indent: 5px;
+}
+#left-column, #right-column {
+float: left;
+height: calc(100% - 40px);
+background-color: #676767;
+overflow: auto;
+width: 20%;
+}
+#left-column {
+}
+#center-column{
+background-color: white;
+width: 60%;
+float: left;
+height: calc(100% - 40px)
+}
+#right-column {
+}
+
+.left-slot {
+width: 100%;
+max-width: 150px;
+height: 40px;
+padding: 10px;
+margin-top: 5px;
+border: 1px solid black;
+border-right: 0px;
+border-radius: 5px 0 0 5px;
+background-color: #252525;
+text-indent: 5px;
+color: white;
+float: right;
+}
+#worldscene{
+font-weight: italic;
+color: gray;
+}
+.left-picture {
+ width: 32px;
+ height: 32px;
+ margin-left: 3px;
+ margin-top: 3px;
+ border: 1px solid gray;
+ border-radius: 3px;
+ background-size: 40px 40px;
+ float:left;
+background-position: -4px, -4px; 
+}
+#left-chat {
+float:right;
+width: 60%;
+height: 200px;
+background-color:white;
+margin-right: 10px;
+margin-top: 10px;
+overflow: hidden;
+border-radius: 10px;
+}
+.chat-contact {
+width: 100%;
+height: 25px;
+line-height: 25px;
+text-indent: 25px;
+}
+.left-name {
+float: left;
+}
+#left-character-picture {
+background-image: url('../wk.png');
+}
+#world-picture {
+background-image: url('../car.jpg');
+}
+.post {
+ float: left;
+ width: 90%;
+ border: 1px solid #DCDCDC;
+ border-radius: 5px;
+ margin-left: 5%;
+ margin-top: 10px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+.post-header {
+	width: 100%;
+	height: 40px;
+}
+.post-picture {
+	border: 1px solid #DCDCDC; 
+	border-radius: 3px;
+	height: 36px;
+	width: 36px;
+	margin-left: 10px;
+ float:left;
+ 	 background-size: 40px 40px;
+background-position: -4px, -4px; 
+background-image: url('../wk.png');
+}
+.post-poster{
+	float:left;
+	height: 40px;
+	width: auto;
+	line-height: 30px;
+	font-weight: bold;
+	padding: 5px;
+	color: red;
+}
+.post-location {
+	float:left;
+	height: 40px;
+	width: auto;
+	line-height: 30px;
+	padding: 5px;
+	color: gray;
+}
+.post-content {
+border-top: 1px solid #DCDCDC;
+padding-top: 10px;
+padding-bottom: 5px;
+}
+.post-text {
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+padding-top: 5px;
+padding-bottom: 5px;
+border-left: 1px solid #B7B7B7;
+border-right: 1px solid #B7B7B7;
+text-align: center;
+background-color: #F9F9F9;
+}
+.post-stats{
+width: 100%;
+height: 40px;
+}
+.post-statbutton {
+float: left;
+color: white;
+height: 30px;
+width: 80px;
+margin-left: 10px;
+margin-bottom: 5px;
+margin-top: 5px;
+background-color: #252525;
+text-align: center;
+line-height: 30px;
+border: 1px solid #B7B7B7;
+border-radius: 5px;
+}
+.post-comments{
+width: 100%;
+padding-top: 5px;
+padding-bottom: 5px;
+overflow: auto;
+}
+.post-comment {
+	width: 90%;
+	margin-left: 5%;
+	height: auto;
+	border-left: 2px solid gray;
+	overflow: auto;
+	margin-top: 5px;
+}
+.post-comment-picture {
+	float:left;
+	width: 36px;
+	height: 36px;
+ 	 background-size: 40px 40px;
+	background-position: -4px, -4px; 
+	background-image: url('../wk.png');
+}
+.post-comment-name {
+float:left; 
+height: 36px;
+width: auto;
+font-weight: bold;
+color: red;
+line-height: 36px;
+text-indent: 5px;
+}
+.post-comment-message {
+	float:left; 
+	height: auto;
+	width: auto;
+	text-indent: 5px;
+	padding-top: 10px;
+}
+.post-count-comments, .post-count-rating{
+float: right;
+height: 40px;
+line-height: 40px;
+padding-left: 5px;
+padding-right: 5px;
+}
