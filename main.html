@@ -39,27 +39,54 @@
 				<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>	
 				Account</a></li>
 				
-				<li><a href="#" class='account-drop-divide'>
+				<li><a href="login.html" class='account-drop-divide'>
 				<span class="glyphicon glyphicon-off" aria-hidden="true"></span>	
 				Log Off</a></li>
-				
 			 </ul>
-
-		</div>
-			
-			
+		</div>		
 
 		<div id='left-column'>
-		
-			<div id='world-slot' class='left-slot'>
-				<div id='world-picture' class='left-picture'></div>
-				<div id='worldname' class='left-name'>Car World</div>
-				<div id='worldscene' class='left-name'>Parking Lot</div>
+			<div>
+				<div id='world-slot' class='left-slot dropdown-toggle' data-toggle='dropdown'  aria-haspopup="true" aria-expanded="false">
+					<div id='world-picture' class='left-picture'></div>
+					<div id='worldname' class='left-name'>Car World</div>
+					<div id='worldscene' class='left-name'>Parking Lot</div>				
+				</div>
+				
+				<ul class="dropdown-menu left-popup" id='world-dropdown'>
+					<li><a href="#" class='world-overview'>Overview</a></li>
+					<li><a href="#" class='world-1'>Parking Lot</a></li>
+					<li><a href="#" class='world-2'>Car Dealership</a></li>
+					<li><a href="#" class='world-3'>Race Track</a></li>
+					
+				</ul>
 			</div>
 			
-			<div id='character-slot' class='left-slot'>
-				<div id='left-character-picture' class='left-picture'></div>
-				<div id='left-character-name' class='left-name'>Sir Malady</div>
+			<div>
+				<div id='character-slot' class='left-slot dropdown-toggle' data-toggle='dropdown'  aria-haspopup="true" aria-expanded="false">
+					<div id='left-character-picture' class='left-picture'></div>
+					<div id='left-character-name' class='left-name'>Sir Malady</div>
+				</div>
+				
+				<ul class="dropdown-menu left-popup" id='character-dropdown'>
+					<li><a href="#">
+						<div class='character-menu-picture'></div>
+						<div class='character-menu-name'>Cunen</div>
+						<div class='character-menu-world'>@Burgerworld</div>				
+					</a></li>
+
+					<li><a href="#">
+						<div class='character-menu-picture'></div>
+						<div class='character-menu-name'>Not Cunen</div>
+						<div class='character-menu-world'>@ProblemLand</div>	
+					</a></li>	
+
+					<li><a href="#">
+						<div class='character-menu-picture'></div>
+						<div class='character-menu-name'>Maybe Cunen</div>
+						<div class='character-menu-world'>@Chicken Ranch</div>	
+					</a></li>				
+				 </ul>
 			</div>
 			
 			<div id='left-chat'>

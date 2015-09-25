@@ -9,9 +9,14 @@
 	<link rel="stylesheet" type="text/css" href="design/main.css">
 </head>
 
-
-<div id='login-formWrapper'>
-	<input type="text" class='login-input a-input' placeholder='Username'></input>
-	<input type="password" class='login-input b-input' placeholder='Password'></input>
-	<button type="button" class='login-button'>Sign in</button>
-</div>
+<html>
+	<body>
+		<div id="login-formWrapper">
+			<form>
+				<input type="text" class="login-input a-input" placeholder="Username"></input>
+				<input type="password" class="login-input b-input" placeholder="Password"></input>
+				<button type="button" class="login-button" onclick="check_login();return false;">Log In</button>
+			</form>
+		</div>
+	</body>
+</html>
