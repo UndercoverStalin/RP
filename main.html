@@ -11,18 +11,44 @@
 
 <html>
 	<body>
-			<div id='header'>		
+		<div id='header'>		
 				<div id='header-logo'>RP Project</div>
 				<div id='header-search'>
 					<input type="text" id="header-input" placeholder='search...'></input>
 				</div>
+				
 			
-				<div id='header-account'>
+				
+			  <div id='header-account' class='dropdown-toggle' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<div id='account-picture'></div>
 					<div id='account-name'>The Dev</div>
-				</div>
-			</div>
+					<span class="glyphicon glyphicon-triangle-bottom float-right" aria-hidden="true"></span>
+			  </div>
+			  
+			<ul class="dropdown-menu" id='account-dropdown'>
 			
+				<li><a href="#">
+				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>	
+				Characters</a></li>
+				
+				<li><a href="#">
+				<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>	
+				Roleplays</a></li>
+				
+				<li><a href="#">
+				<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>	
+				Account</a></li>
+				
+				<li><a href="#" class='account-drop-divide'>
+				<span class="glyphicon glyphicon-off" aria-hidden="true"></span>	
+				Log Off</a></li>
+				
+			 </ul>
+
+		</div>
+			
+			
+
 		<div id='left-column'>
 		
 			<div id='world-slot' class='left-slot'>
@@ -37,16 +63,36 @@
 			</div>
 			
 			<div id='left-chat'>
-				<div class='chat-contact chat-online'>Cunen</div>
-				<div class='chat-contact chat-online'>Huitti</div>
-				<div class='chat-contact chat-online'>Hyt0</div>
-				<div class='chat-contact chat-busy'>Conqueress</div>
-				<div class='chat-contact chat-offline'>Pjimelsaus</div>
-				<div class='chat-contact chat-offline'>Jortza</div>
-				<div class='chat-contact chat-offline'>UndercoverStalin</div>
-				<div class='chat-contact chat-offline'>General Najenda</div>
-				<div class='chat-contact chat-offline'>SannNL</div>
-				<div class='chat-contact chat-offline'>Conqueress Sama</div>
+				<div class='chat-contact'>
+				<span class="glyphicon glyphicon-user chat-online" aria-hidden="true"></span>					
+				Cunen</div>
+				<div class='chat-contact'>
+				<span class="glyphicon glyphicon-user chat-online" aria-hidden="true"></span>					
+				Huitti</div>
+				<div class='chat-contact'>
+				<span class="glyphicon glyphicon-user chat-online" aria-hidden="true"></span>				
+				Hyt0</div>
+				<div class='chat-contact'>
+				<span class="glyphicon glyphicon-user chat-busy" aria-hidden="true"></span>				
+				Conqueress</div>
+				<div class='chat-contact'>
+				<span class="glyphicon glyphicon-user chat-offline" aria-hidden="true"></span>				
+				Pjimelsaus</div>
+				<div class='chat-contact'>
+				<span class="glyphicon glyphicon-user chat-offline" aria-hidden="true"></span>				
+				Jortza</div>
+				<div class='chat-contact'>
+				<span class="glyphicon glyphicon-user chat-offline" aria-hidden="true"></span>				
+				UndercoverStalin</div>
+				<div class='chat-contact'>
+				<span class="glyphicon glyphicon-user chat-offline" aria-hidden="true"></span>				
+				General Najenda</div>
+				<div class='chat-contact'>
+				<span class="glyphicon glyphicon-user chat-offline" aria-hidden="true"></span>				
+				SannNL</div>
+				<div class='chat-contact'>
+				<span class="glyphicon glyphicon-user chat-offline" aria-hidden="true"></span>
+				Conqueress Sama</div>
 			</div>
 		</div>
 		
