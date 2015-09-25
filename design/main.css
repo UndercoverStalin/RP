@@ -412,3 +412,68 @@ height: 40px;
 .world-1{ background-image: url('../lot.jpg'); }
 .world-2{ background-image: url('../shop.jpg'); }
 .world-3{ background-image: url('../race.jpg'); }
+
+#character-edit-picture {
+	margin: 20px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	width: 156px;
+	height: 156px;
+	background-size: 156px 156px;
+	background-image: url('../wk.png');
+}
+#character-edit-displayname {
+	margin: 20px;
+	line-height: 156px;
+	width: calc(100% - 236px);
+	font-size: 16px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+#trait-header {
+width: 100%;
+float:left;
+}
+#new-trait-wrap{
+	float:left;
+	margin-left: 20px;
+}
+.trait-input {
+	height: 30px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+#add-new-trait {
+	height: 30px;
+	border: 0px;
+	border-radius: 5px;
+	margin-left: 5px;
+	width: 50px;
+	background-color: gray;
+}
+#trait-list {
+margin-top: 10px;
+float:left;
+width: 100%;
+}
+.trait {
+min-width: 260px;
+width: 33%;
+height: 20px;
+line-height: 20px;
+float:left;
+}
+.trait_id {
+font-weight: bold;
+}
+.trait-value {
+
+color: gray;
+}
+.trait-id, .trait-value {
+max-width: 45%;
+text-overflow: clip;
+float:left;
+white-space: nowrap;
+text-indent: 5px;
+}
