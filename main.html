@@ -27,7 +27,7 @@
 			  
 			<ul class="dropdown-menu" id='account-dropdown'>
 			
-				<li><a href="#">
+				<li><a href="#" onclick="load_page('character-menu')">
 				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>	
 				Characters</a></li>
 				
@@ -39,27 +39,54 @@
 				<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>	
 				Account</a></li>
 				
-				<li><a href="#" class='account-drop-divide'>
+				<li><a href="login.html" class='account-drop-divide'>
 				<span class="glyphicon glyphicon-off" aria-hidden="true"></span>	
 				Log Off</a></li>
-				
 			 </ul>
-
-		</div>
-			
-			
+		</div>		
 
 		<div id='left-column'>
-		
-			<div id='world-slot' class='left-slot'>
-				<div id='world-picture' class='left-picture'></div>
-				<div id='worldname' class='left-name'>Car World</div>
-				<div id='worldscene' class='left-name'>Parking Lot</div>
+			<div>
+				<div id='world-slot' class='left-slot dropdown-toggle' data-toggle='dropdown'  aria-haspopup="true" aria-expanded="false">
+					<div id='world-picture' class='left-picture'></div>
+					<div id='worldname' class='left-name'>Car World</div>
+					<div id='worldscene' class='left-name'>Parking Lot</div>				
+				</div>
+				
+				<ul class="dropdown-menu left-popup" id='world-dropdown'>
+					<li><a href="#" class='world-overview'>Overview</a></li>
+					<li><a href="#" class='world-1'>Parking Lot</a></li>
+					<li><a href="#" class='world-2'>Car Dealership</a></li>
+					<li><a href="#" class='world-3'>Race Track</a></li>
+					
+				</ul>
 			</div>
 			
-			<div id='character-slot' class='left-slot'>
-				<div id='left-character-picture' class='left-picture'></div>
-				<div id='left-character-name' class='left-name'>Sir Malady</div>
+			<div>
+				<div id='character-slot' class='left-slot dropdown-toggle' data-toggle='dropdown'  aria-haspopup="true" aria-expanded="false">
+					<div id='left-character-picture' class='left-picture'></div>
+					<div id='left-character-name' class='left-name'>Sir Malady</div>
+				</div>
+				
+				<ul class="dropdown-menu left-popup" id='character-dropdown'>
+					<li><a href="#">
+						<div class='character-menu-picture'></div>
+						<div class='character-menu-name'>Cunen</div>
+						<div class='character-menu-world'>@Burgerworld</div>				
+					</a></li>
+
+					<li><a href="#">
+						<div class='character-menu-picture'></div>
+						<div class='character-menu-name'>Not Cunen</div>
+						<div class='character-menu-world'>@ProblemLand</div>	
+					</a></li>	
+
+					<li><a href="#">
+						<div class='character-menu-picture'></div>
+						<div class='character-menu-name'>Maybe Cunen</div>
+						<div class='character-menu-world'>@Chicken Ranch</div>	
+					</a></li>				
+				 </ul>
 			</div>
 			
 			<div id='left-chat'>
@@ -70,7 +97,7 @@
 				<span class="glyphicon glyphicon-user chat-online" aria-hidden="true"></span>					
 				Huitti</div>
 				<div class='chat-contact'>
-				<span class="glyphicon glyphicon-user chat-online" aria-hidden="true"></span>				
+				<span class="glyphicon glyphicon-user chat-offline" aria-hidden="true"></span>				
 				Hyt0</div>
 				<div class='chat-contact'>
 				<span class="glyphicon glyphicon-user chat-busy" aria-hidden="true"></span>				
@@ -82,7 +109,7 @@
 				<span class="glyphicon glyphicon-user chat-offline" aria-hidden="true"></span>				
 				Jortza</div>
 				<div class='chat-contact'>
-				<span class="glyphicon glyphicon-user chat-offline" aria-hidden="true"></span>				
+				<span class="glyphicon glyphicon-user chat-online" aria-hidden="true"></span>				
 				UndercoverStalin</div>
 				<div class='chat-contact'>
 				<span class="glyphicon glyphicon-user chat-offline" aria-hidden="true"></span>				
@@ -96,97 +123,8 @@
 			</div>
 		</div>
 		
-		<div id='center-column'>
-			<div class='post'>
-			
-				<div class='post-header'>
-					<div class='post-picture'></div>
-					<div class='post-poster'>Sir Malady</div>
-					<div class='post-location'>@Parking Lot</div>
-				</div>
-				
-				<div class='post-content'>
-					<div class='post-text'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-					in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-					sunt in culpa qui officia deserunt mollit anim id est laborum
-					</div>
-				</div>
-				
-				<div class='post-stats'>
-					<div class='post-ctrl-rate-up post-statbutton'>Upboat</div>
-					<div class='post-ctrl-rate-down post-statbutton'>Sinkboat</div>
-					<div class='post-ctrl-comment post-statbutton'>Comment</div>
-					<div class='post-count-rating'>Rating: 5</div>
-					<div class='post-count-comments'></div>
-				</div>
-			</div>
-			
-						<div class='post'>
-			
-				<div class='post-header'>
-					<div class='post-picture'></div>
-					<div class='post-poster'>Sir Malady</div>
-					<div class='post-location'>@Parking Lot</div>
-				</div>
-				
-				<div class='post-content'>
-					<div class='post-text'>
-					I know what you did...
-					</div>
-				</div>
-				
-				<div class='post-stats'>
-					<div class='post-ctrl-rate-up post-statbutton'>Upboat</div>
-					<div class='post-ctrl-rate-down post-statbutton'>Sinkboat</div>
-					<div class='post-ctrl-comment post-statbutton'>Comment</div>
-					<div class='post-count-rating'>Rating: 2</div>
-					<div class='post-count-comments'></div>
-				</div>
-			</div>
-			
-			<div class='post'>
-			
-				<div class='post-header'>
-					<div class='post-picture'></div>
-					<div class='post-poster'>Sir Malady</div>
-					<div class='post-location'>@Parking Lot</div>
-				</div>
-				
-				<div class='post-content'>
-					<div class='post-text'>
-					What is the purpose of life?
-					</div>
-				</div>
-				
-				<div class='post-stats'>
-					<div class='post-ctrl-rate-up post-statbutton'>Upboat</div>
-					<div class='post-ctrl-rate-down post-statbutton'>Sinkboat</div>
-					<div class='post-ctrl-comment post-statbutton'>Comment</div>
-					<div class='post-count-rating'>Rating: -4</div>
-					<div class='post-count-comments'>3 Comments</div>
-				</div>
-				
-				<div class='post-comments'>
-					<div class='post-comment'>
-						<div class='post-comment-picture'></div>
-						<div class='post-comment-name'>MacBurger</div>
-						<div class='post-comment-message'>Kebab</div>
-					</div>
-					<div class='post-comment'>
-						<div class='post-comment-picture'></div>
-						<div class='post-comment-name'>MacBurger</div>
-						<div class='post-comment-message'>Pizza</div>
-					</div>
-					<div class='post-comment'>
-						<div class='post-comment-picture'></div>
-						<div class='post-comment-name'>MacBurger</div>
-						<div class='post-comment-message'>Hamburger</div>
-					</div>
-				</div>
-				
-			</div>
+		<div id='center-column'>	
+		
 		</div>
 		
 		<div id='right-column'>
@@ -194,3 +132,7 @@
 		</div>
 	</body>
 </html>
+
+<script type="text/javascript">
+roleplay_initiate_content();
+</script>
